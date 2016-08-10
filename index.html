@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <meta name="description" content="Random Game of Thrones quote generator">
+    <meta name="author" content="Daman Mangat">
+    <title>GOT Quotes</title>
+</head>
+
+<body class="gameOfT">
+
+
+
+<!-- <div id="quoteDiv">
+</div>
+
+
+
+ <button class="btn btn-danger btn-lg" id="quoteButton">Get Quote</button> -->
+
+
+
+
+
+<div class="site-wrapper">
+
+  <div class="site-wrapper-inner">
+
+    <div class="cover-container">
+
+      <div class="masthead clearfix">
+        <div class="inner">
+          <h3 class="masthead-brand">Game of Thrones Random Quote Generator</h3>
+        </div>
+      </div>
+
+      <div id="quoteDiv">
+      </div>
+<div class="">
+  <button class="btn btn-danger btn-lg" id="quoteButton">Get Quote</button>
+</div>
+      <div class="mastfoot">
+        <div class="inner">
+          <p>Created By<a href="https://github.com/daman2408" target="_blank"> Daman Mangat</a>  <span class="glyphicon glyphicon-copyright-mark"></span> 2016.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+//center get quote button
+  var butt = document.getElementById('quoteButton');
+  butt.style.top = '80%';
+  butt.style.left = '50%';
+  butt.style.marginLeft = (-butt.offsetWidth/2).toString() + 'px';
+
+//GET quotes
+
+
+  function displayQuote() {
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://got-quotes.herokuapp.com/quotes");
+    xhr.onload = function (e) {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          var quoteObject = JSON.parse(xhr.responseText);
+          var quote = quoteObject.quote;
+          var author = quoteObject.character;
+          document.getElementById('quoteDiv').innerHTML = "<h4>" + "\"" + quote + "\""+ "</h4>";
+          document.getElementById('quoteDiv').innerHTML += "<p>" + author + "</p>";
+          console.log(author);
+
+          switch (author) {
+            case 'Bran':
+              document.body.removeAttribute('class');
+              document.body.classList.add('bran');
+              break;
+
+            case 'Bronn':
+              document.body.removeAttribute('class');
+              document.body.classList.add('bronn');
+              break;
+
+              case 'Brynden Tully':
+                document.body.removeAttribute('class');
+                document.body.classList.add('brynden');
+                break;
+
+                case 'Cersei and Tyrion':
+                document.body.removeAttribute('class');
+                  document.body.classList.add('cerseiTyrion');
+                  break;
+
+              case 'Cersei Lannister':
+              document.body.removeAttribute('class');
+                document.body.classList.add('cersei');
+                break;
+
+                case 'Daenerys':
+                document.body.removeAttribute('class');
+                  document.body.classList.add('daenarys');
+                  break;
+
+                  case 'Davos':
+                  document.body.removeAttribute('class');
+                    document.body.classList.add('davos');
+                    break;
+
+                    case 'The Hound':
+                    document.body.removeAttribute('class');
+                      document.body.classList.add('hound');
+                      break;
+
+                      case 'Jaime Lannister':
+                      document.body.removeAttribute('class');
+                        document.body.classList.add('jaime');
+                        break;
+
+                        case 'Jon Snow':
+                        document.body.removeAttribute('class');
+                          document.body.classList.add('jon');
+                          break;
+
+                          case 'Littlefinger':
+                          document.body.removeAttribute('class');
+                            document.body.classList.add('littlefinger');
+                            break;
+
+                            case 'Lord Rodrik':
+                            document.body.removeAttribute('class');
+                              document.body.classList.add('lordRodrik');
+                              break;
+
+                            case 'Olenna Tyrell':
+                            document.body.removeAttribute('class');
+                              document.body.classList.add('olenna');
+                              break;
+
+                              case 'Quaithe':
+                              document.body.removeAttribute('class');
+                                document.body.classList.add('quaithe');
+                                break;
+
+                                case 'Renly Baratheon':
+                                document.body.removeAttribute('class');
+                                  document.body.classList.add('renly');
+                                  break;
+
+                                  case 'Samwell':
+                                  document.body.removeAttribute('class');
+                                    document.body.classList.add('sam');
+                                    break;
+
+                                    case 'Sansa':
+                                    document.body.removeAttribute('class');
+                                      document.body.classList.add('sansa');
+                                      break;
+
+                                      case 'Tyrion':
+                                      document.body.removeAttribute('class');
+                                        document.body.classList.add('tyrion');
+                                        break;
+
+                                        case 'Varys':
+                                        document.body.removeAttribute('class');
+                                          document.body.classList.add('varys');
+                                          break;
+
+                                          case 'Victarion Greyjoy':
+                                          document.body.removeAttribute('class');
+                                            document.body.classList.add('victarion');
+                                            break;
+
+
+            default:
+            document.body.removeAttribute('class');
+            document.body.classList.add('gameOfT');
+
+          }
+
+        } else {
+          console.error(xhr.statusText);
+        }
+      }
+    };
+    xhr.onerror = function (e) {
+      console.error(xhr.statusText);
+    };
+    xhr.send(null);
+
+  };
+
+
+
+  document.getElementById('quoteButton').addEventListener('click', displayQuote);
+  // var practice = document.getElementById('pract');
+  // practice.style.width = '100px';
+  // practice.style.height = '100px';
+
+//   function changeColor(e) {
+//     e.addEventListener('click', function() {
+//       e.removeAttribute('id');
+//       e.classList.add('tyrion');
+//     });
+//   };
+//
+//
+// changeColor(practice);
+//
+// var el = document.getElementById('quoteButton');
+// el.addEventListener('click', function() {
+//   if (author == 'Tyrion') {
+//     document.body.classList.add('tyrion');
+//   };
+//
+// )}
+
+
+
+  </script>
+</body>
+</html>
