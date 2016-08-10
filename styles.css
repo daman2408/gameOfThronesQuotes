@@ -7,6 +7,15 @@ html, body {
 body{
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Arimo', sans-serif;
+}
+
+@font-face {
+  font-family: 'GameOfThrones';
+  src: url('GameOfThrones.ttf') format('truetype');
+}
+h3 {
+  font-family: 'GameOfThrones';
 }
 h4 {
   line-height: 1.5;
@@ -39,112 +48,112 @@ h4 {
 }
 
 .bran {
-  background-image: url('bran.jpg');
+  background-image: url('images/bran.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .bronn {
-  background-image: url('bronn.jpg');
+  background-image: url('images/bronn.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .brynden {
-  background-image: url('brynden.jpg');
+  background-image: url('images/brynden.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .cersei {
-  background-image: url('cersei.png');
+  background-image: url('images/cersei.png');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .cerseiTyrion {
-  background-image: url('cerseiTyrion.jpg');
+  background-image: url('images/cerseiTyrion.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .daenarys {
-  background-image: url('daenarys.jpg');
+  background-image: url('images/daenarys.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .davos {
-  background-image: url('davos.jpg');
+  background-image: url('images/davos.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .hound {
-  background-image: url('hound.jpg');
+  background-image: url('images/hound.jpg');
   background-size: 100%;
   background-position: 0 -100px;
   transition: background-image, .5s, ease-out;
 }
 
 .jaime {
-  background-image: url('jaime.jpg');
+  background-image: url('images/jaime.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .jon {
-  background-image: url('jon.jpg');
+  background-image: url('images/jon.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .littlefinger {
-  background-image: url('littlefinger.jpg');
+  background-image: url('images/littlefinger.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .lordRodrik {
-  background-image: url('lordRodrik.jpg');
+  background-image: url('images/lordRodrik.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .olenna {
-  background-image: url('olenna.jpeg');
+  background-image: url('images/olenna.jpeg');
   background-size: 100%;
   background-position: 0 -300px;
   transition: background-image, .5s, ease-out;
 }
 
 .quaithe {
-  background-image: url('quaithe.jpg');
+  background-image: url('images/quaithe.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .renly {
-  background-image: url('renly.jpg');
+  background-image: url('images/renly.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .sam {
-  background-image: url('sam.jpg');
+  background-image: url('images/sam.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
 
 .sansa {
-  background-image: url('sansa.jpg');
+  background-image: url('images/sansa.jpg');
   background-size: 100%;
   background-position: 0 -200px;
   transition: background-image, .5s, ease-out;
 }
 
 .tyrion {
-  background-image: url('Tyrion-Lannister-game-of-thrones-37310814-1024-554.png');
+  background-image: url('images/Tyrion-Lannister-game-of-thrones-37310814-1024-554.png');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
@@ -156,7 +165,7 @@ h4 {
 }
 
 .victarion {
-  background-image: url('victarion.jpg');
+  background-image: url('images/victarion.jpg');
   background-size: cover;
   transition: background-image, .5s, ease-out;
 }
