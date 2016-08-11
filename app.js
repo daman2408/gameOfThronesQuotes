@@ -1,10 +1,4 @@
 
-    //center get quote button
-    var butt = document.getElementById('quoteButton');
-butt.style.top = '80%';
-butt.style.left = '50%';
-butt.style.marginLeft = (-butt.offsetWidth / 2).toString() + 'px';
-
 //GET quotes
 
 
@@ -18,9 +12,8 @@ function displayQuote() {
                 var quoteObject = JSON.parse(xhr.responseText);
                 var quote = quoteObject.quote;
                 var author = quoteObject.character;
-                document.getElementById('quoteDiv').innerHTML = "<h4>" + "\"" + quote + "\"" + "</h4>";
-                document.getElementById('quoteDiv').innerHTML += "<p>" + author + "</p>";
-                console.log(author);
+                document.getElementById('quoteDiv').innerHTML = "<h4>" + "\"" + quote + "\"" + "</h4>" + "\n" + "<p>" + author + "</p>";
+                // document.getElementById('quoteDiv').innerHTML += "<p>" + author + "</p>";
 
                 switch (author) {
                     case 'Bran':

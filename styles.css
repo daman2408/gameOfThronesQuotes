@@ -1,33 +1,53 @@
+* {
+margin: 0;
+}
+
 html, body {
-  min-width: 100%;
-  min-height: 100%;
+  height: 100%;
   color:rgb(235, 235, 235);
+  background-color: #333;
 }
 
 body{
   background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 300;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,2);
+          box-shadow: inset 0 0 100px rgba(0,0,0,2);
 }
 
 @font-face {
   font-family: 'GameOfThrones';
   src: url('GameOfThrones.ttf') format('truetype');
 }
-h3 {
+
+h2 {
   font-family: 'GameOfThrones';
+  color: white;
+  margin:0;
+  margin-bottom: 15px;
+  padding-top:20px;
 }
 h4 {
   line-height: 1.5;
+
 }
-p {
-  transition: display, 0.8s;
+
+#quoteWrap {
+  overflow: hidden;
+
 }
+
 #quoteDiv {
-  padding: 5em 2em;
+  margin: 0 30px;
+  padding: 2em;
+  font-family: 'Alegreya Sans SC', sans-serif;
   text-align: left;
-  text-shadow: 3px 0px 5px rgba(20, 20, 20, 0.94);
+  background: rgba(245, 245, 245, 0.74);
+  border-radius: 67px 67px 67px 67px;
+  -moz-border-radius: 67px 67px 67px 67px;
+  -webkit-border-radius: 67px 67px 67px 67px;
+
+
 }
 
 #quoteDiv > p {
@@ -35,143 +55,245 @@ p {
   font-size: 200%;
 }
 
-#quoteButton {
-  position: absolute;
-
+.buttonDiv {
+  margin: 20px 0;
 }
 
-#pract {
-  background: rgb(52, 72, 208);
-  display: block;
-}
-
-.gameOfT {
-  background-image: url('http://widewallpaper.info/wp-content/uploads/2016/03/Game-of-thrones-Wallpaper-16.jpeg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
-}
 
 .bran {
-  background-image: url('images/bran.jpg');
+  /*background-image: url('images/bran.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: : color, background;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
+  color:  rgb(181, 181, 181);
+  background:  rgb(181, 181, 181);
 }
 
 .bronn {
-  background-image: url('images/bronn.jpg');
+  /*background-image: url('images/bronn.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: : color, background;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
+  color: brown;
+  background: brown;
 }
 
 .brynden {
-  background-image: url('images/brynden.jpg');
+  /*background-image: url('images/brynden.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: : color, background;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
+  color: rgb(70, 120, 166);
+  background:rgb(74, 128, 162);
 }
 
 .cersei {
-  background-image: url('images/cersei.jpg');
+  /*background-image: url('images/cersei.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: : color, background;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
+  color: rgb(196, 57, 48);
+  background: rgb(179, 11, 0);
 }
 
 .cerseiTyrion {
-  background-image: url('images/cerseiTyrion.jpg');
-  background-size: cover;
+  background: rgb(179, 11, 0);
   transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  color: rgb(179, 11, 0);
 }
 
 .daenarys {
-  background-image: url('images/daenarys.jpg');
+  /*background-image: url('images/daenarys.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: : color, background;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
+  color: black;
+  background: black;
 }
 
 .davos {
-  background-image: url('images/davos.jpg');
+  /*background-image: url('images/davos.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
 }
 
 .hound {
-  background-image: url('images/hound.jpg');
+  /*background-image: url('images/hound.jpg');
   background-size: 100%;
   background-position: 0 -100px;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
+  color: rgb(236, 216, 40);
+  background: rgb(236, 216, 40);
 }
 
 .jaime {
-  background-image: url('images/jaime.jpg');
+  /*background-image: url('images/jaime.jpg');
+  background-size: cover;
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
+  transition-timing-function: linear;
+  color: rgb(196, 57, 48);
+  background: rgb(179, 11, 0);
+}
+/*
+.jon {
+  /*background-image: url('images/jon.jpg');
   background-size: cover;
   transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
-}
+}*/
 
 .jon {
-  background-image: url('images/jon.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
+  transition-timing-function: linear;
+  color: rgb(181, 181, 181);
+  background: rgb(181, 181, 181);
 }
 
 .littlefinger {
-  background-image: url('images/littlefinger.jpg');
+  /*background-image: url('images/littlefinger.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
+  transition-timing-function: linear;
+  color: rgb(95, 170, 208);
+  background: rgb(95, 170, 208);
 }
 
 .lordRodrik {
-  background-image: url('images/lordRodrik.jpg');
+  /*background-image: url('images/lordRodrik.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
+  transition-timing-function: linear;
+  color: teal;
+  background: teal;
 }
 
 .olenna {
-  background-image: url('images/olenna.jpeg');
+  /*background-image: url('images/olenna.jpeg');
   background-size: 100%;
   background-position: 0 -300px;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
+  transition-timing-function: linear;
+  color: green;
+  background: green;
 }
 
 .quaithe {
-  background-image: url('images/quaithe.jpg');
+  /*background-image: url('images/quaithe.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
+  transition-timing-function: linear;
+  color: black;
+  background: black;
 }
 
 .renly {
-  background-image: url('images/renly.jpg');
+  /*background-image: url('images/renly.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
+  transition-timing-function: linear;
+  color: rgb(237, 225, 69);
+  background: rgb(237, 225, 69);
 }
 
 .sam {
-  background-image: url('images/sam.jpg');
+  /*background-image: url('images/sam.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
+  transition-timing-function: linear;
+  color: black;
+  background: black;
 }
 
 .sansa {
-  background-image: url('images/sansa.jpg');
+  /*background-image: url('images/sansa.jpg');
   background-size: 100%;
   background-position: 0 -200px;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
+  transition-timing-function: linear;
+  color: rgb(181, 181, 181);
+  background: rgb(181, 181, 181);
 }
 
 .tyrion {
-  background-image: url('images/Tyrion-Lannister-game-of-thrones-37310814-1024-554.png');
+  /*background-image: url('images/Tyrion-Lannister-game-of-thrones-37310814-1024-554.png');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
+  transition-timing-function: linear;
+  color: rgb(196, 57, 48);
+  background: rgb(179, 11, 0);
 }
 
 .varys {
-  background-image: url('http://i37.photobucket.com/albums/e89/capprotti02/Varys.jpg');
+  /*background-image: url('http://i37.photobucket.com/albums/e89/capprotti02/Varys.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
+  transition-timing-function: linear;
+  color: rgb(117, 94, 180);
+  background: rgb(117, 94, 180);
 }
 
 .victarion {
-  background-image: url('images/victarion.jpg');
+  /*background-image: url('images/victarion.jpg');
   background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
+  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
+  transition-timing-function: linear;
+  color: black;
+  background: black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
 }
 
 /*
@@ -195,24 +317,23 @@ a:hover {
   border: 1px solid #fff;
 }
 
+/*
+ * Boot Strap CSS
+ */
+
 
 /*
  * Base structure
  */
 
-html,
-body {
-  height: 100%;
-  background-color: #333;
-}
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,2);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
+  background: transparent;
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
@@ -223,6 +344,7 @@ body {
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+
 }
 .cover-container {
   margin-right: auto;
@@ -232,6 +354,7 @@ body {
 /* Padding for spacing */
 .inner {
   padding: 30px;
+  background: transparent;
 }
 
 
@@ -300,5 +423,11 @@ body {
   .mastfoot,
   .cover-container {
     width: 700px;
+  }
+}
+
+@media (max-width: 773px) {
+  html, body {
+    height: auto;
   }
 }
