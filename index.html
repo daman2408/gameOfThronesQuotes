@@ -6,9 +6,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Random Game of Thrones quote generator">
     <meta name="author" content="Daman Mangat">
     <title>GOT Quotes</title>
@@ -16,24 +20,24 @@
 
 <body class="gameOfT" onload="displayQuote()">
 
-    <div class="site-wrapper">
+    <div class="site-wrapper" id="page-wrapper">
 
         <div class="site-wrapper-inner">
 
             <div class="cover-container">
 
-                <div class="masthead clearfix">
+                <div class="masthead clearfix" id="masthead">
                     <div class="inner">
                         <h2 class="masthead-brand">Game of Thrones Random Quote Generator</h2>
                     </div>
                 </div>
 
-                <div id="quoteDiv">
+                <div class="container" id="quoteDiv">
                 </div>
-                <div class="buttonDiv">
-                    <button class="btn btn-danger btn-lg" id="quoteButton">Get Quote</button>
+                <div class="buttonDiv" id="theButtonDiv">
+                    <button class="btn btn-info btn-lg" id="quoteButton">Get Quote</button>
                 </div>
-                <div class="mastfoot">
+                <div class="mastfoot" id="mastfoot">
                     <div class="inner">
                         <p>Created By<a href="https://github.com/daman2408" target="_blank"> Daman Mangat</a> <span class="glyphicon glyphicon-copyright-mark"></span> 2016.</p>
                     </div>
@@ -45,7 +49,7 @@
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
 

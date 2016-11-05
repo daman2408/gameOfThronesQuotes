@@ -1,8 +1,33 @@
 
 //GET quotes
 
+//set screen height of the body depending on width of the viewport
+var setBodyHeight = function() {
+  if (window.innerWidth < 769) {
+
+    var mastHeadHeight = document.getElementById('masthead').scrollHeight;
+    var quoteDiv = document.getElementById('quoteDiv').clientHeight;
+    var buttonDiv = (document.getElementById('theButtonDiv').clientHeight);
+    var mastfootHeight = document.getElementById('mastfoot').scrollHeight;
+    var realPageHeight = mastHeadHeight + quoteDiv + buttonDiv + mastfootHeight + 40;
+
+
+    console.log(mastHeadHeight, quoteDiv, buttonDiv, mastfootHeight, realPageHeight);
+
+    document.body.style.height = realPageHeight + "px";
+  } else {
+    document.body.style.height = "100%"
+  };
+};
+// window.addEventListener('load', setBodyHeight);
+window.addEventListener('resize', setBodyHeight);
+
 
 function displayQuote() {
+
+  // document.body.style.height = realPageHeight;
+
+
 
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://got-quotes.herokuapp.com/quotes");
@@ -121,7 +146,9 @@ function displayQuote() {
                         document.body.removeAttribute('class');
                         document.body.classList.add('gameOfT');
 
-                }
+                };
+
+                  setBodyHeight();
 
             } else {
                 console.error(xhr.statusText);

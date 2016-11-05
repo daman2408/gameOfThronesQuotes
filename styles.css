@@ -4,11 +4,13 @@ margin: 0;
 
 html, body {
   height: 100%;
+  width: 100%;
   color:rgb(235, 235, 235);
   background-color: #333;
 }
 
 body{
+  min-height: 100%;
   background-repeat: no-repeat;
   font-weight: 300;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,2);
@@ -38,8 +40,8 @@ h4 {
 }
 
 #quoteDiv {
-  margin: 0 30px;
-  padding: 2em;
+  margin: 0 15px;
+  padding: 1.5em;
   font-family: 'Alegreya Sans SC', sans-serif;
   text-align: left;
   background: rgba(245, 245, 245, 0.74);
@@ -59,11 +61,13 @@ h4 {
   margin: 20px 0;
 }
 
+#quoteButton {
+  color: rgb(238, 238, 238);
+}
+
 
 .bran {
-  /*background-image: url('images/bran.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: : color, background;
   transition-duration: 0.8s;
   transition-timing-function: cubic-bezier(.11, .11, 1, .46);
@@ -72,9 +76,7 @@ h4 {
 }
 
 .bronn {
-  /*background-image: url('images/bronn.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: : color, background;
   transition-duration: 0.8s;
   transition-timing-function: cubic-bezier(.11, .11, 1, .46);
@@ -83,9 +85,7 @@ h4 {
 }
 
 .brynden {
-  /*background-image: url('images/brynden.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: : color, background;
   transition-duration: 0.8s;
   transition-timing-function: cubic-bezier(.11, .11, 1, .46);
@@ -94,9 +94,7 @@ h4 {
 }
 
 .cersei {
-  /*background-image: url('images/cersei.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: : color, background;
   transition-duration: 0.8s;
   transition-timing-function: cubic-bezier(.11, .11, 1, .46);
@@ -111,9 +109,7 @@ h4 {
 }
 
 .daenarys {
-  /*background-image: url('images/daenarys.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: : color, background;
   transition-duration: 0.8s;
   transition-timing-function: cubic-bezier(.11, .11, 1, .46);
@@ -122,19 +118,21 @@ h4 {
 }
 
 .davos {
-  /*background-image: url('images/davos.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
+  transition-property: color, background;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
+}
+
+.gameOfT {
+
   transition-property: color, background;
   transition-duration: 0.8s;
   transition-timing-function: cubic-bezier(.11, .11, 1, .46);
 }
 
 .hound {
-  /*background-image: url('images/hound.jpg');
-  background-size: 100%;
-  background-position: 0 -100px;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: color, background;
   transition-duration: 0.8s;
   transition-timing-function: cubic-bezier(.11, .11, 1, .46);
@@ -143,9 +141,7 @@ h4 {
 }
 
 .jaime {
-  /*background-image: url('images/jaime.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: color, background;
   transition-duration: 0.8s;
   transition-timing-function: cubic-bezier(.11, .11, 1, .46);
@@ -153,139 +149,100 @@ h4 {
   color: rgb(196, 57, 48);
   background: rgb(179, 11, 0);
 }
-/*
-.jon {
-  /*background-image: url('images/jon.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
-}*/
 
 .jon {
   transition-property: color, background;
   transition-duration: 0.8s;
-  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
   transition-timing-function: linear;
   color: rgb(181, 181, 181);
   background: rgb(181, 181, 181);
 }
 
 .littlefinger {
-  /*background-image: url('images/littlefinger.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: color, background;
   transition-duration: 0.8s;
-  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
   transition-timing-function: linear;
   color: rgb(95, 170, 208);
   background: rgb(95, 170, 208);
 }
 
 .lordRodrik {
-  /*background-image: url('images/lordRodrik.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: color, background;
   transition-duration: 0.8s;
-  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
   transition-timing-function: linear;
   color: teal;
   background: teal;
 }
 
 .olenna {
-  /*background-image: url('images/olenna.jpeg');
-  background-size: 100%;
-  background-position: 0 -300px;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: color, background;
   transition-duration: 0.8s;
-  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
   transition-timing-function: linear;
   color: green;
   background: green;
 }
 
 .quaithe {
-  /*background-image: url('images/quaithe.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: color, background;
   transition-duration: 0.8s;
-  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
   transition-timing-function: linear;
   color: black;
   background: black;
 }
 
 .renly {
-  /*background-image: url('images/renly.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: color, background;
   transition-duration: 0.8s;
-  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
   transition-timing-function: linear;
   color: rgb(237, 225, 69);
   background: rgb(237, 225, 69);
 }
 
 .sam {
-  /*background-image: url('images/sam.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: color, background;
   transition-duration: 0.8s;
-  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
   transition-timing-function: linear;
   color: black;
   background: black;
 }
 
 .sansa {
-  /*background-image: url('images/sansa.jpg');
-  background-size: 100%;
-  background-position: 0 -200px;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: color, background;
   transition-duration: 0.8s;
-  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
   transition-timing-function: linear;
   color: rgb(181, 181, 181);
   background: rgb(181, 181, 181);
 }
 
 .tyrion {
-  /*background-image: url('images/Tyrion-Lannister-game-of-thrones-37310814-1024-554.png');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: color, background;
   transition-duration: 0.8s;
-  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
   transition-timing-function: linear;
   color: rgb(196, 57, 48);
   background: rgb(179, 11, 0);
 }
 
 .varys {
-  /*background-image: url('http://i37.photobucket.com/albums/e89/capprotti02/Varys.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: color, background;
   transition-duration: 0.8s;
-  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
   transition-timing-function: linear;
   color: rgb(117, 94, 180);
   background: rgb(117, 94, 180);
 }
 
 .victarion {
-  /*background-image: url('images/victarion.jpg');
-  background-size: cover;
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);*/
+
   transition-property: color, background;
   transition-duration: 0.8s;
-  /*transition-timing-function: cubic-bezier(.11, .11, 1, .46);*/
   transition-timing-function: linear;
   color: black;
   background: black;
@@ -342,6 +299,8 @@ body {
           box-shadow: inset 0 0 100px rgba(0,0,0,2);
 }
 .site-wrapper-inner {
+  width: 100%;
+  height: 100%;
   display: table-cell;
   vertical-align: top;
 
@@ -396,6 +355,14 @@ body {
  * Affix and center
  */
 
+ /*Small devices (landscape phones, 544px and up)*/
+
+ @media (min-width: 544px) {
+   #quoteDiv {
+     margin: auto;
+   }
+ }
+
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
@@ -426,8 +393,23 @@ body {
   }
 }
 
-@media (max-width: 773px) {
+/*@media (max-width: 773px) {
   html, body {
-    height: auto;
+    height: 100%;
   }
-}
+}*/
+
+/*
+// Small devices (landscape phones, 544px and up)
+@media (min-width: 544px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+*/
