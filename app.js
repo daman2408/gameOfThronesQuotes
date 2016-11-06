@@ -37,7 +37,7 @@ function displayQuote() {
                 var quoteObject = JSON.parse(xhr.responseText);
                 var quote = quoteObject.quote;
                 var author = quoteObject.character;
-                document.getElementById('quoteDiv').innerHTML = "<h4>" + "\"" + quote + "\"" + "</h4>" + "\n" + "<p>" + author + "</p>";
+                document.getElementById('quoteDiv').innerHTML = "<p>" + "\"" + quote + "\"" + "</p>" + "\n" + "<p>" + author + "</p>";
                 // document.getElementById('quoteDiv').innerHTML += "<p>" + author + "</p>";
 
                 switch (author) {
