@@ -1,0 +1,24 @@
+{
+  "name": "game_of_thrones_quote_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.5",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daman2408/gameOfThronesQuotes.git"
+  },
+  "author": "Daman Mangat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daman2408/gameOfThronesQuotes/issues"
+  },
+  "homepage": "https://github.com/daman2408/gameOfThronesQuotes#readme"
+}
