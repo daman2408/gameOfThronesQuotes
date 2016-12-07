@@ -6,19 +6,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Random Game of Thrones quote generator">
+    <meta name="author" content="Daman Mangat">
 
-    <link rel="stylesheet" href="reset.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>GOT Quotes</title>
+
+    <link rel="stylesheet" href="docs/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Random Game of Thrones quote generator">
-    <meta name="author" content="Daman Mangat">
-    <title>GOT Quotes</title>
 </head>
 
-<body class="gameOfT" onload="displayQuote()">
+<body class="gameOfT">
 
     <div class="site-wrapper" id="page-wrapper">
 
@@ -28,7 +27,7 @@
 
                 <div class="masthead clearfix" id="masthead">
                     <div class="inner">
-                        <h2 class="masthead-brand">Game of Thrones Random Quote Generator</h2>
+                        <img src='Logo_Game_of_Thrones.png' style="width: 100%"/>
                     </div>
                 </div>
 
@@ -48,9 +47,10 @@
         </div>
 
     </div>
+    <script src="docs/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app.js" async defer></script>
 
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="app.js"></script>
+
 </body>
 
 </html>

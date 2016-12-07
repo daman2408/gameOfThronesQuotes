@@ -11,9 +11,6 @@ var setBodyHeight = function() {
     var mastfootHeight = document.getElementById('mastfoot').scrollHeight;
     var realPageHeight = mastHeadHeight + quoteDiv + buttonDiv + mastfootHeight + 40;
 
-
-    console.log(mastHeadHeight, quoteDiv, buttonDiv, mastfootHeight, realPageHeight);
-
     document.body.style.height = realPageHeight + "px";
   } else {
     document.body.style.height = "100%"
