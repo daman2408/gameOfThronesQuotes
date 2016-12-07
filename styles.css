@@ -70,16 +70,14 @@ h4 {
 
   transition-property: : color, background;
   transition-duration: 0.8s;
-  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
-  color:  rgb(181, 181, 181);
-  background:  rgb(181, 181, 181);
+  color:  rgb(122, 119, 119);
+  background:  rgb(122, 119, 119);
 }
 
 .bronn {
 
   transition-property: : color, background;
   transition-duration: 0.8s;
-  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
   color: brown;
   background: brown;
 }
@@ -88,7 +86,6 @@ h4 {
 
   transition-property: : color, background;
   transition-duration: 0.8s;
-  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
   color: rgb(70, 120, 166);
   background:rgb(74, 128, 162);
 }
@@ -97,7 +94,6 @@ h4 {
 
   transition-property: : color, background;
   transition-duration: 0.8s;
-  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
   color: rgb(196, 57, 48);
   background: rgb(179, 11, 0);
 }
@@ -112,7 +108,6 @@ h4 {
 
   transition-property: : color, background;
   transition-duration: 0.8s;
-  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
   color: black;
   background: black;
 }
@@ -121,31 +116,31 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
+  color: rgb(122, 119, 119);
+  background: rgb(122, 119, 119);
+
 }
 
 .gameOfT {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
+
 }
 
 .hound {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
-  color: rgb(236, 216, 40);
-  background: rgb(236, 216, 40);
+
+  color: rgb(196, 153, 0);
+  background: rgb(196, 153, 0);
 }
 
 .jaime {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: cubic-bezier(.11, .11, 1, .46);
-  transition-timing-function: linear;
   color: rgb(196, 57, 48);
   background: rgb(179, 11, 0);
 }
@@ -153,16 +148,15 @@ h4 {
 .jon {
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: linear;
-  color: rgb(181, 181, 181);
-  background: rgb(181, 181, 181);
+  color: rgb(122, 119, 119);
+  background: rgb(122, 119, 119);
 }
 
 .littlefinger {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: linear;
+
   color: rgb(95, 170, 208);
   background: rgb(95, 170, 208);
 }
@@ -171,7 +165,6 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: linear;
   color: teal;
   background: teal;
 }
@@ -180,7 +173,6 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: linear;
   color: green;
   background: green;
 }
@@ -189,7 +181,6 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: linear;
   color: black;
   background: black;
 }
@@ -198,16 +189,14 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: linear;
-  color: rgb(237, 225, 69);
-  background: rgb(237, 225, 69);
+  color: rgb(196, 153, 0);
+  background: rgb(196, 153, 0);
 }
 
 .sam {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: linear;
   color: black;
   background: black;
 }
@@ -216,16 +205,14 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: linear;
-  color: rgb(181, 181, 181);
-  background: rgb(181, 181, 181);
+  color: rgb(122, 119, 119);
+  background: rgb(122, 119, 119);
 }
 
 .tyrion {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: linear;
   color: rgb(196, 57, 48);
   background: rgb(179, 11, 0);
 }
@@ -234,7 +221,6 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: linear;
   color: rgb(117, 94, 180);
   background: rgb(117, 94, 180);
 }
@@ -243,7 +229,6 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  transition-timing-function: linear;
   color: black;
   background: black;
 }
