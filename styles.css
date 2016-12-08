@@ -17,18 +17,6 @@ body{
           box-shadow: inset 0 0 100px rgba(0,0,0,2);
 }
 
-@font-face {
-  font-family: 'GameOfThrones';
-  src: url('GameOfThrones.ttf') format('truetype');
-}
-
-h2 {
-  font-family: 'GameOfThrones';
-  color: white;
-  margin:0;
-  margin-bottom: 15px;
-  padding-top:20px;
-}
 h4 {
   line-height: 1.5;
 
@@ -62,7 +50,8 @@ h4 {
 }
 
 #quoteButton {
-  color: rgb(238, 238, 238);
+  color: rgb(231, 231, 231);
+  text-shadow: 0px 0px 4px #3a798c;
 }
 
 
@@ -78,8 +67,8 @@ h4 {
 
   transition-property: : color, background;
   transition-duration: 0.8s;
-  color: brown;
-  background: brown;
+  color: rgb(179, 11, 0);
+  background: rgb(179, 11, 0);
 }
 
 .brynden {
@@ -94,7 +83,7 @@ h4 {
 
   transition-property: : color, background;
   transition-duration: 0.8s;
-  color: rgb(196, 57, 48);
+  color: rgb(179, 11, 0);
   background: rgb(179, 11, 0);
 }
 
@@ -125,6 +114,8 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
+  color: black;
+  background: black;
 
 }
 
@@ -132,7 +123,6 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-
   color: rgb(196, 153, 0);
   background: rgb(196, 153, 0);
 }
@@ -156,7 +146,6 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-
   color: rgb(95, 170, 208);
   background: rgb(95, 170, 208);
 }
@@ -173,8 +162,8 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  color: green;
-  background: green;
+  color: rgb(21, 107, 22);
+  background: rgb(21, 107, 22);
 }
 
 .quaithe {
@@ -213,7 +202,7 @@ h4 {
 
   transition-property: color, background;
   transition-duration: 0.8s;
-  color: rgb(196, 57, 48);
+  color: rgb(179, 11, 0);
   background: rgb(179, 11, 0);
 }
 
@@ -333,6 +322,7 @@ body {
 .mastfoot {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,2);
+  position: relative;
 }
 
 
@@ -345,6 +335,17 @@ body {
  @media (min-width: 544px) {
    #quoteDiv {
      margin: auto;
+   }
+ }
+
+ @media (max-width: 767px) {
+   .cover-container {
+       height: 100%;
+   }
+   .mastfoot {
+     position: absolute;
+     bottom: 0;
+     left: 35px;
    }
  }
 

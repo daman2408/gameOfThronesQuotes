@@ -1,41 +1,52 @@
 
 //GET quotes
+var octopus = {
+
+  getQuoteDivHeight: function() {
+    var quoteDivHeight = document.getElementById('quoteDiv').scrollHeight;
+    return quoteDivHeight;
+  },
+
+  getMastHeadHeight: function() {
+    var mastHeadHeight = document.getElementById('masthead').scrollHeight;
+    return mastHeadHeight;
+  },
+
+  getButtonDivHeight: function() {
+    var buttonDiv = (document.getElementById('theButtonDiv').clientHeight);
+    return buttonDiv;
+  }
+
+};
 
 //set screen height of the body depending on width of the viewport
 var setBodyHeight = function() {
   if (window.innerWidth < 769) {
 
-    var mastHeadHeight = document.getElementById('masthead').scrollHeight;
-    var quoteDiv = document.getElementById('quoteDiv').clientHeight;
-    var buttonDiv = (document.getElementById('theButtonDiv').clientHeight);
     var mastfootHeight = document.getElementById('mastfoot').scrollHeight;
-    var realPageHeight = mastHeadHeight + quoteDiv + buttonDiv + mastfootHeight + 40;
+    var realPageHeight = octopus.getMastHeadHeight() + octopus.getQuoteDivHeight() + octopus.getButtonDivHeight() + mastfootHeight + 40;
 
     document.body.style.height = realPageHeight + "px";
   } else {
     document.body.style.height = "100%"
   };
 };
-// window.addEventListener('load', setBodyHeight);
+
 window.addEventListener('resize', setBodyHeight);
 
 
 function displayQuote() {
 
-  // document.body.style.height = realPageHeight;
-
-
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://got-quotes.herokuapp.com/quotes");
+    xhr.open("GET", "https://got-quotes.herokuapp.com/quotes"); //returns a random quote from single character
     xhr.onload = function(e) {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
-                var quoteObject = JSON.parse(xhr.responseText);
-                var quote = quoteObject.quote;
-                var author = quoteObject.character;
+                var quoteObject = JSON.parse(xhr.responseText),
+                quote = quoteObject.quote,
+                author = quoteObject.character;
                 document.getElementById('quoteDiv').innerHTML = "<p>" + "\"" + quote + "\"" + "</p>" + "\n" + "<p>" + author + "</p>";
-                // document.getElementById('quoteDiv').innerHTML += "<p>" + author + "</p>";
 
                 switch (author) {
                     case 'Bran':
@@ -159,4 +170,7 @@ function displayQuote() {
 
 };
 
-document.getElementById('quoteButton').addEventListener('click', displayQuote);
+document.getElementById('quoteButton').addEventListener('click', function(e) {
+  e.preventDefault();
+  displayQuote();
+});
