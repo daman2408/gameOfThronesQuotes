@@ -170,6 +170,8 @@ function displayQuote() {
 
 };
 
+requestAnimationFrame(displayQuote);
+
 document.getElementById('quoteButton').addEventListener('click', function(e) {
   e.preventDefault();
   displayQuote();
