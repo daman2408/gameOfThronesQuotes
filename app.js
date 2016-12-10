@@ -34,6 +34,7 @@ var setBodyHeight = function() {
 
 window.addEventListener('resize', setBodyHeight);
 
+requestAnimationFrame(displayQuote);
 
 function displayQuote() {
 
@@ -169,8 +170,6 @@ function displayQuote() {
     xhr.send(null);
 
 };
-
-requestAnimationFrame(displayQuote);
 
 document.getElementById('quoteButton').addEventListener('click', function(e) {
   e.preventDefault();
