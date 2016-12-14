@@ -222,115 +222,6 @@ h4 {
   background: black;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-}
-
-/*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-/*
- * Boot Strap CSS
- */
-
-
-/*
- * Base structure
- */
-
-body {
-  color: #fff;
-  text-align: center;
-}
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  background: transparent;
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,2);
-          box-shadow: inset 0 0 100px rgba(0,0,0,2);
-}
-.site-wrapper-inner {
-  width: 100%;
-  height: 100%;
-  display: table-cell;
-  vertical-align: top;
-
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
-  padding: 30px;
-  background: transparent;
-}
-
-
-/*
- * Header
- */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  line-height: 1.7;
-}
-
-
-
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
-
-/*
- * Footer
- */
-
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,2);
-  position: relative;
-}
-
-
-/*
- * Affix and center
- */
-
- /*Small devices (landscape phones, 544px and up)*/
 
  @media (min-width: 544px) {
    #quoteDiv {
@@ -379,23 +270,43 @@ body {
   }
 }
 
-/*@media (max-width: 773px) {
-  html, body {
-    height: 100%;
-  }
-}*/
+.title {
+  width: 100%;
+}
 
-/*
-// Small devices (landscape phones, 544px and up)
-@media (min-width: 544px) { ... }
+.convictsDiv {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+.fbgDiv {
+  width: 100%;
+  position: absolute;
+  bottom:0px;
+}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+.footerText {
+  color: rgba(255, 255, 255, 0.42);
+}
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+.footerText:hover {
+  color: $gray-lighter;
+}
 
-*/
+.btn {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.22)
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.btn:focus, .btn:active {
+  border-color: rgba(255, 255, 255, 0.02)
+}
+
+#buttonContainer {
+  margin-bottom: 150px;
+}

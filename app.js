@@ -1,39 +1,4 @@
 
-//GET quotes
-var octopus = {
-
-  getQuoteDivHeight: function() {
-    var quoteDivHeight = document.getElementById('quoteDiv').scrollHeight;
-    return quoteDivHeight;
-  },
-
-  getMastHeadHeight: function() {
-    var mastHeadHeight = document.getElementById('masthead').scrollHeight;
-    return mastHeadHeight;
-  },
-
-  getButtonDivHeight: function() {
-    var buttonDiv = (document.getElementById('theButtonDiv').clientHeight);
-    return buttonDiv;
-  }
-
-};
-
-//set screen height of the body depending on width of the viewport
-var setBodyHeight = function() {
-  if (window.innerWidth < 769) {
-
-    var mastfootHeight = document.getElementById('mastfoot').scrollHeight;
-    var realPageHeight = octopus.getMastHeadHeight() + octopus.getQuoteDivHeight() + octopus.getButtonDivHeight() + mastfootHeight + 40;
-
-    document.body.style.height = realPageHeight + "px";
-  } else {
-    document.body.style.height = "100%"
-  };
-};
-
-window.addEventListener('resize', setBodyHeight);
-
 requestAnimationFrame(displayQuote);
 
 function displayQuote() {
@@ -157,7 +122,7 @@ function displayQuote() {
 
                 };
 
-                  setBodyHeight();
+                  // setBodyHeight();
 
             } else {
                 console.error(xhr.statusText);

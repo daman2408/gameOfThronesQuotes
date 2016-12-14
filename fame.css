@@ -24,11 +24,11 @@
 
 .btn {
   background: rgba(255, 255, 255, 0.3);
-  border-color: rgba(255, 255, 255, 0.02)
+  border-color: rgba(255, 255, 255, 0.22)
 }
 
 .btn:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .btn:focus, .btn:active {
