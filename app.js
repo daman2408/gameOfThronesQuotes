@@ -1,6 +1,6 @@
 
-requestAnimationFrame(displayQuote);
 
+requestAnimationFrame(displayQuote);
 function displayQuote() {
 
 
