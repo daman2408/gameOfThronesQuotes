@@ -12,7 +12,7 @@ function displayQuote() {
                 var quoteObject = JSON.parse(xhr.responseText),
                 quote = quoteObject.quote,
                 author = quoteObject.character;
-                document.getElementById('quoteDiv').innerHTML = "<p>" + "\"" + quote + "\"" + "</p>" + "\n" + "<p>" + author + "</p>";
+                document.getElementById('quoteDiv').innerHTML = "<p id='quote'>" + "\"" + quote + "\"" + "</p>" + "\n" + "<p>" + author + "</p>";
 
                 switch (author) {
                     case 'Bran':

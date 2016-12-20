@@ -11,9 +11,10 @@
 
     <title>GOT Quotes</title>
 
-    <link rel="stylesheet" href="docs/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="docs/node_modules/bootstrap/dist/css/bootstrap-flex.min.css">
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" media="(min-width: 544px)" href="mobile.css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body class="gameOfT">
@@ -21,40 +22,56 @@
     <div class="site-wrapper" id="page-wrapper">
 
         <div class="site-wrapper-inner">
+          
+            <div class="titleDiv">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="inner">
+                        <img class="title" src='Logo_Game_of_Thrones.png' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
 
             <div class="convictsDiv">
-                <div class="container">
-                    <div class="row col-md-12">
-                        <div class="inner">
-                            <img class="title" src='Logo_Game_of_Thrones.png' />
-                        </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-8 col-xs-12" id="quote-container">
+                    <div class="container" id="quoteDiv">
+                      Click the button to see quotes!
                     </div>
-
-                    <div class="row offset-md-2 col-md-8">
-                        <div class="container" id="quoteDiv">
-                            Click the button to see quotes!
-                        </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-12 flex-sm-middle" id="buttonContainer">
+                    <div class="buttonDiv" id="theButtonDiv">
+                        <button class="btn btn-lg" id="quoteButton">Get Quote</button>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
 
-            <div class="fbgDiv">
-                <div class="container">
-                    <div class="row offset-md-4 col-md-4" id="buttonContainer">
-                        <div class="buttonDiv" id="theButtonDiv">
-                            <button class="btn btn-lg" id="quoteButton">Get Quote</button>
-                        </div>
-                    </div>
-
-                    <div class="row offset-md-4 col-md-4">
-                        <div>
-                            <p class="footerText">Created By<a class="footerText" href="https://github.com/daman2408" target="_blank"> Daman Mangat</a> <span class="glyphicon glyphicon-copyright-mark"></span> 2016.</p>
-                        </div>
-                    </div>
+            <div class="footerDiv">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p class="footerText">Created By<a class="footerText" href="https://github.com/daman2408" target="_blank"> Daman Mangat</a> <span class="glyphicon glyphicon-copyright-mark"></span> 2016.</p>
+                  </div>
                 </div>
+              </div>
             </div>
+
+
+
+
+
+
+
+
         </div>
-        <script src="app.js" async defer></script>
+        <script async src="app.js"></script>
 </body>
 
 </html>

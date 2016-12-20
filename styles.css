@@ -30,7 +30,7 @@ h4 {
 #quoteDiv {
   margin: 0 15px;
   padding: 1.5em;
-  height: 350px;
+  height: 250px;
   font-family: 'Alegreya Sans SC', sans-serif;
   text-align: left;
   background: rgba(204, 204, 204, 0.6);
@@ -41,7 +41,7 @@ h4 {
 
 }
 
-#quoteDiv > p {
+#quote {
   font-style: italic;
   font-size: 1.2em;
 }
@@ -59,7 +59,7 @@ h4 {
 .bran {
 
   transition-property: : color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color:  rgb(122, 119, 119);
   background:  rgb(122, 119, 119);
 }
@@ -67,7 +67,7 @@ h4 {
 .bronn {
 
   transition-property: : color, background;
-  transition-duration: 0.25s;
+  transition-duration: .68s;
   color: rgb(179, 11, 0);
   background: rgb(179, 11, 0);
 }
@@ -75,7 +75,7 @@ h4 {
 .brynden {
 
   transition-property: : color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: rgb(70, 120, 166);
   background:rgb(74, 128, 162);
 }
@@ -83,21 +83,22 @@ h4 {
 .cersei {
 
   transition-property: : color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: rgb(179, 11, 0);
   background: rgb(179, 11, 0);
 }
 
 .cerseiTyrion {
+  transition-property: : color, background;
+  transition-duration: 0.68s;
   background: rgb(179, 11, 0);
-  transition: background-image, 0.25s, cubic-bezier(.11, .11, 1, .46);
   color: rgb(179, 11, 0);
 }
 
 .daenarys {
 
   transition-property: : color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: black;
   background: black;
 }
@@ -105,7 +106,7 @@ h4 {
 .davos {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: rgb(122, 119, 119);
   background: rgb(122, 119, 119);
 
@@ -114,7 +115,7 @@ h4 {
 .gameOfT {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: black;
   background: black;
 
@@ -123,7 +124,7 @@ h4 {
 .hound {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: rgb(196, 153, 0);
   background: rgb(196, 153, 0);
 }
@@ -131,14 +132,14 @@ h4 {
 .jaime {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: rgb(196, 57, 48);
   background: rgb(179, 11, 0);
 }
 
 .jon {
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: rgb(122, 119, 119);
   background: rgb(122, 119, 119);
 }
@@ -146,7 +147,7 @@ h4 {
 .littlefinger {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: rgb(95, 170, 208);
   background: rgb(95, 170, 208);
 }
@@ -154,7 +155,7 @@ h4 {
 .lordRodrik {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: teal;
   background: teal;
 }
@@ -162,7 +163,7 @@ h4 {
 .olenna {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: rgb(21, 107, 22);
   background: rgb(21, 107, 22);
 }
@@ -170,7 +171,7 @@ h4 {
 .quaithe {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: black;
   background: black;
 }
@@ -178,7 +179,7 @@ h4 {
 .renly {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: rgb(196, 153, 0);
   background: rgb(196, 153, 0);
 }
@@ -186,7 +187,7 @@ h4 {
 .sam {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: black;
   background: black;
 }
@@ -194,7 +195,7 @@ h4 {
 .sansa {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: rgb(122, 119, 119);
   background: rgb(122, 119, 119);
 }
@@ -202,7 +203,7 @@ h4 {
 .tyrion {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: rgb(179, 11, 0);
   background: rgb(179, 11, 0);
 }
@@ -210,7 +211,7 @@ h4 {
 .varys {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: rgb(117, 94, 180);
   background: rgb(117, 94, 180);
 }
@@ -218,7 +219,7 @@ h4 {
 .victarion {
 
   transition-property: color, background;
-  transition-duration: 0.25s;
+  transition-duration: 0.68s;
   color: black;
   background: black;
 }
@@ -261,18 +262,6 @@ body {
   width: 100%;
 }
 
-.convictsDiv {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-}
-
-.fbgDiv {
-  width: 100%;
-  position: absolute;
-  bottom:0px;
-}
-
 .footerText {
   color: rgba(255, 255, 255, 0.42);
 }
@@ -283,7 +272,7 @@ body {
 
 .btn {
   background: rgba(0, 0, 0, 0.1);
-  border-color: rgba(255, 255, 255, 0.252)
+  border-color: rgba(255, 255, 255, 0.682)
 
 }
 
@@ -297,4 +286,23 @@ body {
 
 #buttonContainer {
   margin-bottom: 150px;
+}
+
+
+/*
+
+Make this page mobile-friendly:
+
+1. make the title container have a top padding of 0;
+2. make the quote div have a height of 170px;
+3. font size should be 0.7em;
+4. remove bottom margin for buttonContainer
+5.
+
+
+
+*/
+
+@media query {
+
 }

@@ -1,0 +1,22 @@
+/*
+@media (min-width: 544px);
+
+*/
+
+#quoteDiv {
+  margin: 0;
+  height: 175px;
+}
+
+ #quote {
+  font-size: 0.85em;
+  line-height: 1;
+}
+
+#buttonContainer {
+  margin-bottom: 0;
+}
+
+.footerDiv {
+  display: none;
+}
