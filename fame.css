@@ -1,0 +1,40 @@
+.title {
+  width: 100%;
+}
+
+.convictsDiv {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+
+.fbgDiv {
+  width: 100%;
+  position: absolute;
+  bottom:0px;
+}
+
+.footerText {
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.footerText:hover {
+  color: $gray-lighter;
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.22)
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.btn:focus, .btn:active {
+  border-color: rgba(255, 255, 255, 0.02)
+}
+
+#buttonContainer {
+  margin-bottom: 150px;
+}

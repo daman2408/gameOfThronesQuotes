@@ -30,19 +30,24 @@ h4 {
 #quoteDiv {
   margin: 0 15px;
   padding: 1.5em;
+  height: 250px;
   font-family: 'Alegreya Sans SC', sans-serif;
   text-align: left;
-  background: rgba(245, 245, 245, 0.74);
-  border-radius: 67px 67px 67px 67px;
-  -moz-border-radius: 67px 67px 67px 67px;
-  -webkit-border-radius: 67px 67px 67px 67px;
+  background: rgba(204, 204, 204, 0.8);
+  border-radius: 16px 16px 16px 16px;
+  -moz-border-radius: 16px 16px 16px 16px;
+  -webkit-border-radius: 16px 16px 16px 16px;
 
 
 }
 
-#quoteDiv > p {
+#quote {
   font-style: italic;
   font-size: 1.2em;
+}
+
+#author {
+  font-size: 1.8em;
 }
 
 .buttonDiv {
@@ -51,14 +56,14 @@ h4 {
 
 #quoteButton {
   color: rgb(231, 231, 231);
-  text-shadow: 0px 0px 4px #3a798c;
+  text-shadow: 0px 0px 4px #0e0e0e;
 }
 
 
 .bran {
 
   transition-property: : color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color:  rgb(122, 119, 119);
   background:  rgb(122, 119, 119);
 }
@@ -66,7 +71,7 @@ h4 {
 .bronn {
 
   transition-property: : color, background;
-  transition-duration: 0.8s;
+  transition-duration: .68s;
   color: rgb(179, 11, 0);
   background: rgb(179, 11, 0);
 }
@@ -74,7 +79,7 @@ h4 {
 .brynden {
 
   transition-property: : color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: rgb(70, 120, 166);
   background:rgb(74, 128, 162);
 }
@@ -82,21 +87,22 @@ h4 {
 .cersei {
 
   transition-property: : color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: rgb(179, 11, 0);
   background: rgb(179, 11, 0);
 }
 
 .cerseiTyrion {
+  transition-property: : color, background;
+  transition-duration: 0.68s;
   background: rgb(179, 11, 0);
-  transition: background-image, 0.8s, cubic-bezier(.11, .11, 1, .46);
   color: rgb(179, 11, 0);
 }
 
 .daenarys {
 
   transition-property: : color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: black;
   background: black;
 }
@@ -104,7 +110,7 @@ h4 {
 .davos {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: rgb(122, 119, 119);
   background: rgb(122, 119, 119);
 
@@ -113,7 +119,7 @@ h4 {
 .gameOfT {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: black;
   background: black;
 
@@ -122,7 +128,7 @@ h4 {
 .hound {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: rgb(196, 153, 0);
   background: rgb(196, 153, 0);
 }
@@ -130,14 +136,14 @@ h4 {
 .jaime {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: rgb(196, 57, 48);
   background: rgb(179, 11, 0);
 }
 
 .jon {
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: rgb(122, 119, 119);
   background: rgb(122, 119, 119);
 }
@@ -145,7 +151,7 @@ h4 {
 .littlefinger {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: rgb(95, 170, 208);
   background: rgb(95, 170, 208);
 }
@@ -153,7 +159,7 @@ h4 {
 .lordRodrik {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: teal;
   background: teal;
 }
@@ -161,7 +167,7 @@ h4 {
 .olenna {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: rgb(21, 107, 22);
   background: rgb(21, 107, 22);
 }
@@ -169,7 +175,7 @@ h4 {
 .quaithe {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: black;
   background: black;
 }
@@ -177,7 +183,7 @@ h4 {
 .renly {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: rgb(196, 153, 0);
   background: rgb(196, 153, 0);
 }
@@ -185,7 +191,7 @@ h4 {
 .sam {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: black;
   background: black;
 }
@@ -193,7 +199,7 @@ h4 {
 .sansa {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: rgb(122, 119, 119);
   background: rgb(122, 119, 119);
 }
@@ -201,7 +207,7 @@ h4 {
 .tyrion {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: rgb(179, 11, 0);
   background: rgb(179, 11, 0);
 }
@@ -209,7 +215,7 @@ h4 {
 .varys {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: rgb(117, 94, 180);
   background: rgb(117, 94, 180);
 }
@@ -217,7 +223,7 @@ h4 {
 .victarion {
 
   transition-property: color, background;
-  transition-duration: 0.8s;
+  transition-duration: 0.68s;
   color: black;
   background: black;
 }
@@ -226,36 +232,6 @@ footer {
   position: fixed;
   bottom: 0;
 }
-
-/*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-/*
- * Boot Strap CSS
- */
-
-
-/*
- * Base structure
- */
 
 body {
   color: #fff;
@@ -279,123 +255,58 @@ body {
   vertical-align: top;
 
 }
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
 
-/* Padding for spacing */
 .inner {
   padding: 30px;
   background: transparent;
 }
 
 
-/*
- * Header
- */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  line-height: 1.7;
+.title {
+  width: 100%;
 }
 
-
-
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
+.footerText {
+  color: rgba(255, 255, 255, 0.42);
 }
 
+.footerText:hover {
+  color: $gray-lighter;
+}
 
-/*
- * Footer
- */
+.btn {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 255, 255, 0.682)
 
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,2);
-  position: relative;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.btn:focus, .btn:active {
+  border-color: rgba(255, 255, 255, 0.02)
+}
+
+#buttonContainer {
+  margin-bottom: 150px;
 }
 
 
 /*
- * Affix and center
- */
 
- /*Small devices (landscape phones, 544px and up)*/
+Make this page mobile-friendly:
 
- @media (min-width: 544px) {
-   #quoteDiv {
-     margin: auto;
-   }
- }
+1. make the title container have a top padding of 0;
+2. make the quote div have a height of 170px;
+3. font size should be 0.7em;
+4. remove bottom margin for buttonContainer
+5.
 
- @media (max-width: 767px) {
-   .cover-container {
-       height: 100%;
-   }
-   .mastfoot {
-     position: absolute;
-     bottom: 0;
-     left: 35px;
-   }
- }
 
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
-}
-
-/*@media (max-width: 773px) {
-  html, body {
-    height: 100%;
-  }
-}*/
-
-/*
-// Small devices (landscape phones, 544px and up)
-@media (min-width: 544px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
 
 */
+
+@media query {
+
+}
