@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="docs/node_modules/bootstrap/dist/css/bootstrap-flex.min.css">
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" media="(min-width: 544px)" href="mobile.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" media="(max-width: 736px)" href="mobile-landscape.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" media="(max-width: 415px)" href="mobile-portrait.css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body class="gameOfT">
@@ -22,7 +23,7 @@
     <div class="site-wrapper" id="page-wrapper">
 
         <div class="site-wrapper-inner">
-          
+
             <div class="titleDiv">
               <div class="container">
                 <div class="row">
@@ -39,12 +40,12 @@
             <div class="convictsDiv">
               <div class="container">
                 <div class="row">
-                  <div class="col-sm-8 col-xs-12" id="quote-container">
+                  <div class="col-sm-8 offset-md-2 col-md-8" id="quote-container">
                     <div class="container" id="quoteDiv">
                       Click the button to see quotes!
                     </div>
                   </div>
-                  <div class="col-sm-4 col-xs-12 flex-sm-middle" id="buttonContainer">
+                  <div class="col-sm-4 col-md-12 flex-sm-middle" id="buttonContainer">
                     <div class="buttonDiv" id="theButtonDiv">
                         <button class="btn btn-lg" id="quoteButton">Get Quote</button>
                     </div>
