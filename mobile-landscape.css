@@ -5,7 +5,7 @@
 
 #quoteDiv {
   margin: 0;
-  height: 125px;
+  height: 11em;
 }
 
  #quote {
@@ -15,7 +15,6 @@
 
 #author {
   font-size: 1.6em;
-  margin-bottom: 0;
 }
 
 #buttonContainer {

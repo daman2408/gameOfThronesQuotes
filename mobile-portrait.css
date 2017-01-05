@@ -6,6 +6,23 @@
   margin-top: 55px;
 }
 
+<<<<<<< HEAD
+=======
+#quote-container {
+  padding: 0 30px;
+}
+
+#quoteDiv {
+  height: 145px;
+}
+
+
+#quote {
+  font-size: .85em;
+  margin-bottom: 0px;
+}
+
+>>>>>>> exp
 #buttonContainer {
   margin-top: 75px;
 }
