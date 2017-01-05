@@ -6,6 +6,20 @@
   margin-top: 55px;
 }
 
+#quote-container {
+  padding: 0 30px;
+}
+
+#quoteDiv {
+  height: 145px;
+}
+
+
+#quote {
+  font-size: .85em;
+  margin-bottom: 0px;
+}
+
 #buttonContainer {
   margin-top: 75px;
 }
